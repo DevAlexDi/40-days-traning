@@ -1,0 +1,37 @@
+@import "layout/var";
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    @media (max-width: 767px){
+        position: relative;
+    }
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+    &__logo{
+        max-width: 111px;
+    }
+    &__login{
+        &__link{
+            display: block;
+            padding-left: 27px;
+            background-image: url(../../img/icon-login.svg);
+            background-repeat: no-repeat;
+            background-position: center left;
+            color: #fff;
+            font-family: $sec_font;
+            font-size: 14px;
+            @media (max-width: 767px){
+                color: #000;
+                background-image: url(../../img/icon-login-black.svg);
+            }
+        }
+    }
+}

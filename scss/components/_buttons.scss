@@ -1,0 +1,25 @@
+@import "layout/var";
+
+
+
+.butt-wrapp{
+    display: flex;
+    &--right{
+        justify-content: flex-end;
+    }
+    &--center{
+        justify-content: center;
+    }
+    &__butt{
+        display: block;
+        text-align: center;
+        background-image: linear-gradient(to right, #FF0075, #C20026);
+        color: #fff;
+        padding: 14px 23px;
+        border-radius: 6px;
+        &--width-595{
+            width: 100%;
+            max-width: 595px;
+        }
+    }
+}
