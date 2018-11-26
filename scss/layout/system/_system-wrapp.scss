@@ -1,0 +1,40 @@
+@import "../var";
+
+
+.system{
+    display: flex;
+    min-height: 100vh;
+    @media (max-width: 991px){
+        position: relative;
+        overflow: hidden;
+    }
+    &__show-hide-sidebar{
+        display: none;
+        @media (max-width: 991px){
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            outline: none;
+            border: none;
+            background: transparent;
+            width: 50px;
+            padding: 10px;
+            z-index: 50;
+            span{
+                background: #000;
+                margin-bottom: 6px;
+                height: 2px;
+                display: block;
+                width: 100%;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            
+        }
+        @media (max-width: 767px){
+            background: #fff;
+        }
+    }
+}

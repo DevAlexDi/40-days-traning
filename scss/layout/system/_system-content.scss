@@ -1,0 +1,106 @@
+@import "../var";
+
+.rel-wr{
+    position: relative;
+}
+.system__content{
+    position: relative;
+    background: #F4F4F4;
+    max-width: 960px;
+    width: 100%;
+    padding: 35px 50px 40px 80px;
+    @media (max-width: 991px){
+        max-width: 100%;
+    }
+    @media (max-width: 767px){
+        padding: 35px 15px 40px 15px;
+    }
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 130px;
+        height: 100%;
+        background: #fff;
+        @media (max-width: 1199px){
+            display: none;
+        }
+    }
+    &__title{
+        color: #595858;
+        text-transform: uppercase;
+        font-weight: $b;
+        margin-bottom: 8px;
+        font-size: 24px;
+        @media (max-width: 767px){
+            
+        }
+    }
+    .breads{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        list-style: none;
+        li{
+            font-size: 12px;
+            color: #817F7F;
+            margin-right: 20px;
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: calc(100% + 7.5px);
+                width: 5px;
+                height: 5px;
+                margin-top: -2.5px;
+                background: #C20026;
+                border-radius: 50%;
+            }
+            &:last-child{
+                &:before{
+                    display: none;
+                }
+            }
+            a{
+                color: #817F7F;
+                
+            }
+        }
+        
+    }
+}
+.system__blocks{
+    padding-top: 115px;
+    @media (max-width: 991px){
+        padding-top: 60px;
+    }
+    @media (max-width: 767px){
+         padding-top: 30px;
+    }
+    &__item{
+        background: #fff;
+        position: relative;
+        box-shadow: 15px 4px 35px 0px rgba(0, 0, 0, 0.15);
+        margin-bottom: 40px;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            width: 30px;
+            height: calc(100% - 40px);
+            transform: translateY(-50%);
+            background-image: linear-gradient(to right, #C20026, #FF0075);
+            @media (max-width: 767px){
+                width: 7.5px;
+            }
+        }
+    }
+}
