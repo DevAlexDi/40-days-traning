@@ -10,6 +10,11 @@
     &--center{
         justify-content: center;
     }
+    &--2-butt{
+        @media (max-width: 1240px){
+            display: block;
+        }
+    }
     &__butt{
         display: block;
         text-align: center;
@@ -18,6 +23,39 @@
         padding: 14px 23px;
         border-radius: 6px;
         cursor: pointer;
+        min-width: 200px;
+        border: none;
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.7;
+        }
+        &--less-padd{
+            padding: 9px 23px;
+        }
+        &--width-595{
+            width: 100%;
+            max-width: 595px;
+        }
+    }
+    &__butt-2{
+        display: block;
+        text-align: center;
+        background-image: linear-gradient(to right, #C20026, #FF0075);
+        color: #fff;
+        padding: 14px 23px;
+        border-radius: 6px;
+        cursor: pointer;
+        min-width: 200px;
+        border: none;
+        margin-right: 16px;
+        transition: 0.3s;
+        &:hover{
+            opacity: 0.7;
+        }
+        @media (max-width: 1240px){
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
         &--less-padd{
             padding: 9px 23px;
         }

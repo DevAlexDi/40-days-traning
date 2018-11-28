@@ -80,6 +80,11 @@
             border: none;
             outline: none;
             background: transparent;
+            &.active{
+                i{
+                    color: #C20026;
+                }
+            }
             i{
                 color: #C4C4C4;
             }

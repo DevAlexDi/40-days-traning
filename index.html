@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>40 days traning</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fontello.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
   
@@ -18,7 +19,7 @@
                     <img src="img/logo.svg" class="img-responsive" alt="">
                 </div>
                 <div class="header-flex__login">
-                    <a class="header-flex__login__link" href="#">Войти</a>
+                    <span class="header-flex__login__link" data-toggle="modal" data-target="#login-modal">Войти</span>
                 </div>
             </div>
         </div>
@@ -108,7 +109,28 @@
         </div>
     </footer>
     
-    
+    <!--modals-->
+    <div class="modal fade modal-login" id="login-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <p class="modal-login__title">Для входа заполните форму ниже</p>
+                <form class="modal-login__form">
+                    <div class="modal-login__form__inp-groupe">
+                        <label for="login-inp">Логин или e-mail</label>
+                        <input type="text" id="login-inp">
+                    </div>
+                    <div class="modal-login__form__inp-groupe">
+                        <label for="pass">Пароль</label>
+                        <input type="password" id="pass">
+                    </div>
+                    <a href="#" class="modal-login__form__forgot-pass">Восстановить пароль <i class="icon-key"></i></a>
+                    <div class="butt-wrapp butt-wrapp--right">
+                        <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>

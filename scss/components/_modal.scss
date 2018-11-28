@@ -1,4 +1,81 @@
-//.modal {
-//
-//	
-//}
+@import "layout/var";
+
+.modal-backdrop.in{
+    opacity: 0.9;
+}
+.modal-backdrop{
+    background: #fff;
+   
+}
+
+.modal-content{
+     box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    border: none;
+    padding: 24px 40px;
+    @media (max-width: 767px){
+        padding: 20px 15px;
+    }
+}
+.modal-dialog{
+    margin: 50px auto;
+    @media (max-width: 767px){
+        margin: 30px auto;
+        width: 290px;
+    }
+}
+
+.modal-login{
+    &__title{
+        font-size: 18px;
+        color: #595858;
+        text-align: center;
+        font-weight: $b;
+        margin-bottom: 27px;
+    }
+    &__form{
+        &__inp-groupe{
+            label{
+                font-weight: $r;
+                display: block;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            input{
+                outline: none;
+                display: block;
+                width: 100%;
+           
+                margin-bottom: 16px;
+                border: 1px solid transparent;
+                border-radius: 0;
+                background: #EEEEEE;
+                color: #000;
+                transition: 0.3s;
+                padding: 7px 16px;
+                resize: none;
+                &:focus{
+                    border: 1px solid #EEEEEE;
+                    background: #fff;
+                }
+            }
+            
+        }
+        &__forgot-pass{
+            font-size: 12px;
+            color: #C4C4C4;
+            transition: 0.3s;
+            cursor: pointer;
+           
+            &:hover{
+               color: #C20026; 
+            }
+            i{
+                color: #C20026;
+            }
+        }
+        .butt-wrapp{
+            padding-top: 30px;
+        }
+    }
+}
