@@ -136,14 +136,14 @@
                 <div class="system__blocks system__blocks--with-tab">
                     <div class="blocks-tab-nav">
                         <ul class="nav nav-tabs">
+                            <li>
+                                <a href="#tab-itm-1">Цели</a>
+                            </li>
                             <li class="active">
-                                <a data-toggle="tab" href="#tab-itm-1">Цели</a>
+                                <a href="#tab-itm-2">События</a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#tab-itm-2">События</a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#tab-itm-3">Действия</a>
+                                <a href="#tab-itm-3">Действия</a>
                             </li>
                         </ul>
                     </div>
@@ -158,100 +158,116 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-content">
-                        <div id="tab-itm-1" class="tab-pane fade in active">
-                            <div class="system__blocks__item">
-                                <div class="inform">
-                                    <div class="inform__head">
-                                        <p class="inform__head__text inform__head__text--small-font">Ваша цель</p>
-                                    </div>
-                                    <form class="journal-wr">
-                                        <div class="journal-wr__date-wr">
-                                            <i class="icon-calendar"></i>
-                                            <input class="journal-wr__date" type="text" data-toggle="datepicker" placeholder="Дата достижения цели">
-                                        </div>
-                                        <div>
-                                            <textarea class="journal-wr__textarea" placeholder="Добавте цель"></textarea>
-                                            <textarea class="journal-wr__textarea" placeholder="Средства достижения цели"></textarea>
-                                        </div>
-                                        <div class="butt-wrapp butt-wrapp--right ">
-                                            <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
-                                        </div>
-                                    </form>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-itm-2" class="tab-pane fade">
-                            <div class="system__blocks__item">
-                                <div class="inform">
-                                    <div class="inform__head">
-                                        <p class="inform__head__text inform__head__text--small-font">Ваша цель</p>
-                                    </div>
-                                    <form class="journal-wr">
-                                        <div class="journal-wr__date-wr">
-                                            <i class="icon-calendar"></i>
-                                            <input class="journal-wr__date" type="text" data-toggle="datepicker" placeholder="Дата достижения цели">
-                                        </div>
-                                        <div>
-                                            <textarea class="journal-wr__textarea" placeholder="Добавте событие"></textarea>
-                                        </div>
-                                        <div class="butt-wrapp butt-wrapp--right">
-                                            <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
-                                        </div>
-                                    </form>
-                                    
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div id="tab-itm-3" class="tab-pane fade">
-                            <div class="system__blocks__item">
-                                <div class="inform">
-                                    <div class="inform__head">
-                                        <p class="inform__head__text inform__head__text--small-font">День №1 (10.11.2018)</p>
-                                    </div>
-                                    <form class="journal-wr">
-                                        <div class="journal-wr__time">
-                                            <label for="time-1">Время действия</label>
-                                            <input type="text" id="time-1" data-mask="time">
-                                        </div>
-                                        <div>
-                                            <textarea class="journal-wr__textarea" placeholder="Добавте событие"></textarea>
-                                        </div>
-                                        <div class="butt-wrapp butt-wrapp--right">
-                                            <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
-                                        </div>
-                                    </form>
-                                    
-                                </div>
-                            </div>
-                            <div class="system__blocks__item">
-                                <div class="inform">
-                                    <div class="inform__head">
-                                        <p class="inform__head__text inform__head__text--small-font">День №1 (11.11.2018)</p>
-                                    </div>
-                                    <form class="journal-wr">
-                                        <div class="journal-wr__time">
-                                            <label for="time-1">Время действия</label>
-                                            <input type="text" id="time-1" data-mask="time">
-                                        </div>
-                                        <div>
-                                            <textarea class="journal-wr__textarea" placeholder="Добавте событие"></textarea>
-                                        </div>
-                                        <div class="butt-wrapp butt-wrapp--right">
-                                            <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
-                                        </div>
-                                    </form>
-                                    
-                                </div>
-                            </div>
-                           
-                        </div>
+                    
                         
-                        
-                        
+
+                    <div class="system__blocks__item">
+                        <div class="inform">
+                            <div class="inform__head">
+                                <p class="inform__head__text inform__head__text--small-font">Новое событие</p>
+                            </div>
+                            <form class="journal-wr">
+                                <div class="journal-wr__date-wr">
+                                    <i class="icon-calendar"></i>
+                                    <input class="journal-wr__date" type="text" data-toggle="datepicker" placeholder="Дата события">
+                                </div>
+                                <div>
+                                    <textarea class="journal-wr__textarea" placeholder="Добавте событие"></textarea>
+                                </div>
+                                <div class="butt-wrapp butt-wrapp--right">
+                                    <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
+                    
+                    <div class="system__blocks__item">
+                        <div class="inform">
+                            <div class="inform__head">
+                                <p class="inform__head__text inform__head__text--small-font">События</p>
+                                <div class="butt-wrapp butt-wrapp--right">
+                                    <a href="#" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Архив событий</a>
+                                </div>
+                            </div>
+                            <div class="goals-wr">
+                                <!--после каждого one-goal форма-->
+                                <div class="one-goal">
+                                    <div class="one-goal__left">
+                                        <p class="one-goal__left__text">
+                                            <span>Дата события:</span>
+                                            09/11/2018
+                                        </p>
+                                       
+                                         <p class="one-goal__left__text">
+                                            <span>Событие:</span>
+                                            qweqweqwe
+                                        </p>
+                                    </div>
+                                    <div class="one-goal__right">
+                                        <div class="butt-wrapp butt-wrapp--right butt-wrapp--col-butt">
+                                            <button type="submit" class="edit-js butt-wrapp__butt butt-wrapp__butt--less-padd">Изменить</button>
+                                        </div>
+                                        <div class="butt-wrapp butt-wrapp--right butt-wrapp--delete">
+                                            <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Удалить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="journal-wr">
+                                    <div class="journal-wr__date-wr">
+                                        <i class="icon-calendar"></i>
+                                        <input class="journal-wr__date" type="text" data-toggle="datepicker" placeholder="Дата события">
+                                    </div>
+                                    <div>
+                                        <textarea class="journal-wr__textarea" placeholder="Добавте событие"></textarea>
+                                    </div>
+                                    <div class="butt-wrapp butt-wrapp--right">
+                                        <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
+                                    </div>
+                                </form>
+                                <div class="one-goal">
+                                    <div class="one-goal__left">
+                                        <p class="one-goal__left__text">
+                                            <span>Дата события:</span>
+                                            09/11/2018
+                                        </p>
+                                       
+                                         <p class="one-goal__left__text">
+                                            <span>Событие:</span>
+                                            qweqweqwe
+                                        </p>
+                                    </div>
+                                    <div class="one-goal__right">
+                                        <div class="butt-wrapp butt-wrapp--right butt-wrapp--col-butt">
+                                            <button type="submit" class="edit-js butt-wrapp__butt butt-wrapp__butt--less-padd">Изменить</button>
+                                        </div>
+                                        <div class="butt-wrapp butt-wrapp--right butt-wrapp--delete">
+                                            <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Удалить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="journal-wr">
+                                    <div class="journal-wr__date-wr">
+                                        <i class="icon-calendar"></i>
+                                        <input class="journal-wr__date" type="text" data-toggle="datepicker" placeholder="Дата события">
+                                    </div>
+                                    <div>
+                                        <textarea class="journal-wr__textarea" placeholder="Добавте событие"></textarea>
+                                    </div>
+                                    <div class="butt-wrapp butt-wrapp--right">
+                                        <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
+                                    </div>
+                                </form>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+
+                        
+                        
+                        
+                    
                 </div>
             </div>
         </div>
@@ -274,6 +290,13 @@
             var input = $(this);
             input.setMask(input.data('mask'));
           });
+        
+        
+        $('.edit-js').click(function(){
+            $(this).parents('.one-goal').addClass('for-hide');
+            $(this).parents('.one-goal').next().addClass('showed-edit');
+            
+        });
     </script>
 </body>
 </html>

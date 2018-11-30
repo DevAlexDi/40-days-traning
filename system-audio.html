@@ -148,8 +148,19 @@
                             <div class="inform__head">
                                 <p class="inform__head__text inform__head__text--with-butt">Мои аудиозаписи</p>
                                 <div class="butt-wrapp butt-wrapp--right">
-                                    <span href="#" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Добавить аудиозапись</span>
+                                    <span class="butt-wrapp__butt butt-wrapp__butt--less-padd open-pick-file-wr">Добавить аудиозапись</span>
                                 </div>
+                                <form class="pick-file-wr">
+                                    <div class="left-upload-file">
+                                        <input type="text" class="name-sound-inp" placeholder="Название композиции">
+                                        <input type="file" id="upload" class="inputfile" accept=".mp3,audio/*" >
+                                        <label for="upload"><span>Выбрать файл</span></label>
+                                    </div>
+                                    <div class="butt-wrapp butt-wrapp--right">
+                                        <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Добавить</button>
+                                    </div>
+                                    
+                                </form>
                             </div>
                             <div class="player-wr">
                                 <div class="player-wr__item">
@@ -168,8 +179,9 @@
                                         <div class="audio-track">
                                             <audio src="audio/SleepAway.mp3" preload="auto" />
                                         </div>
+                                        <button class="delete-audio"></button>
                                     </div>
-                                    <button class="delete-audio"></button>
+                                    
                                 </div>
                                 <div class="player-wr__item">
                                     <div class="player-wr__item__name">
@@ -187,6 +199,7 @@
                                         <div class="audio-track">
                                              <audio src="audio/MaidwiththeFlaxenHair.mp3" preload="auto" />
                                         </div>
+                                        <button class="delete-audio"></button>
                                     </div>
                                 </div>
                             
@@ -229,6 +242,44 @@
                     }
                 }
             });
+        });
+        
+        
+        
+        //inp upload
+        
+        
+        var inputs = document.querySelectorAll( '.inputfile' );
+        Array.prototype.forEach.call( inputs, function( input )
+        {
+            var label	 = input.nextElementSibling,
+                labelVal = label.innerHTML;
+
+            input.addEventListener( 'change', function( e )
+            {
+                var fileName = '';
+                if( this.files && this.files.length > 1 )
+                    fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+                else
+                    fileName = e.target.value.split( '\\' ).pop();
+
+                if( fileName )
+                    label.querySelector( 'span' ).innerHTML = fileName;
+                else
+                    label.innerHTML = labelVal;
+            });
+        });
+        
+        
+        //open file form
+       
+        $('.open-pick-file-wr').click(function(){
+            if($('.pick-file-wr').hasClass('showed')){
+                $('.pick-file-wr').removeClass('showed');
+            }
+            else{
+                $('.pick-file-wr').addClass('showed');
+            }
         });
     </script>
     

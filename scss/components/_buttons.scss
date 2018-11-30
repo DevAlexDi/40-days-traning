@@ -15,6 +15,16 @@
             display: block;
         }
     }
+    &--col-butt{
+        margin-bottom: 10px;
+    }
+    &--delete{
+        
+        .butt-wrapp__butt{
+            background: #595858;
+            
+        }
+    }
     &__butt{
         display: block;
         text-align: center;

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="css/fontello.css"/>
-    
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
   
@@ -52,7 +52,7 @@
                         Расписание вебинаров
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#">
                         <i class="icon-i-3"></i>
                         Дневник тренинга
@@ -94,7 +94,7 @@
                         Объявления тренеров
                     </a>
                 </li>
-                <li class="active">
+                <li >
                     <a href="#">
                         <i class="icon-i-9"></i>
                         Личные сообщения
@@ -120,14 +120,14 @@
         <div class="system__content">
             <div class="rel-wr">
                 <h1 class="system__content__title">
-                    Личные сообщения
+                    Дневник тренинга
                 </h1>
                 <ul class="breads">
                     <li>
                         <a href="#">Главная</a>
                     </li>
                     <li>
-                        Личные сообщения
+                        Дневник тренинга
                     </li>
                 </ul>
                 
@@ -136,17 +136,14 @@
                 <div class="system__blocks system__blocks--with-tab">
                     <div class="blocks-tab-nav">
                         <ul class="nav nav-tabs">
+                            <li>
+                                <a href="#tab-itm-1">Цели</a>
+                            </li>
+                            <li>
+                                <a href="#tab-itm-2">События</a>
+                            </li>
                             <li class="active">
-                                <a data-toggle="tab" href="#tab-itm-1">Собеседник</a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#tab-itm-2">Прочитано</a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#tab-itm-3">Создано</a>
-                            </li>
-                            <li>
-                                <a data-toggle="tab" href="#tab-itm-4">Заголовок</a>
+                                <a href="#tab-itm-3">Действия</a>
                             </li>
                         </ul>
                     </div>
@@ -161,58 +158,89 @@
                             </div>
                         </div>
                     </div>
-                  
-                        
+                    
+
+
                     <div class="system__blocks__item">
                         <div class="inform">
                             <div class="inform__head">
-                                <p class="inform__head__text inform__head__text--small-font">Беседа с Мария</p>
-
-
-                                <!--сообщения-->
-                                
-                                <div class="msg-list-sended">
-                                    <div class="msg-list-sended__item">
-                                        <p class="msg-list-sended__item__title">
-                                            29.11.2018 <span>Вы</span>
-                                        </p>
-                                        <p class="msg-list-sended__item__text">
-                                            Привет как дела?
-                                        </p>
-                                    </div>
-                                    <div class="msg-list-sended__item">
-                                        <p class="msg-list-sended__item__title">
-                                            29.11.2018 <span>Мария</span>
-                                        </p>
-                                        <p class="msg-list-sended__item__text">
-                                            Привет как дела?
-                                        </p>
-                                    </div>
-                                </div>
-                                <!--/сообщения-->
+                                <p class="inform__head__text inform__head__text--small-font">День №1 (10.11.2018)</p>
                             </div>
                             <form class="journal-wr">
-                                <p class="journal-wr__title-form">Заголовок</p>
-                                <div class="journal-wr__input-msg">
-                                    <input class="journal-wr__input-msg__inp" type="text" placeholder="Добавте заголовок">
+                                <div class="journal-wr__time">
+                                    <label for="time-1">Время действия</label>
+                                    <input type="text" id="time-1" data-mask="time">
                                 </div>
                                 <div>
-                                    <textarea class="journal-wr__textarea" placeholder="Текст сообщения"></textarea>
+                                    <textarea class="journal-wr__textarea" placeholder="Добавьте действие на этот день"></textarea>
                                 </div>
                                 <div class="butt-wrapp butt-wrapp--right">
-                                    <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Отправить</button>
+                                    <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
                                 </div>
                             </form>
 
                         </div>
                     </div>
-                           
-                        
-                        
+                    <div class="system__blocks__item">
+                        <div class="inform">
+                            <div class="inform__head">
+                                <p class="inform__head__text inform__head__text--small-font">День №1 (11.11.2018)</p>
+                            </div>
+                            <form class="journal-wr">
+                                <div class="journal-wr__time">
+                                    <label for="time-1">Время действия</label>
+                                    <input type="text" id="time-1" data-mask="time">
+                                </div>
+                                <div>
+                                    <textarea class="journal-wr__textarea" placeholder="Добавьте действие на этот день"></textarea>
+                                </div>
+                                <div class="butt-wrapp butt-wrapp--right">
+                                    <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
+                                </div>
+                            </form>
+                            <div class="goals-wr">
+                                <div class="one-goal">
+                                    <div class="one-goal__left">
+                                        <p class="one-goal__left__text">
+                                            <span>Время действия:</span>
+                                            22:00
+                                        </p>
+                                       
+                                         <p class="one-goal__left__text">
+                                            <span>Действие:</span>
+                                            qweqweqwe
+                                        </p>
+                                    </div>
+                                    <div class="one-goal__right">
+                                        <div class="butt-wrapp butt-wrapp--right butt-wrapp--col-butt">
+                                            <button type="submit" class="edit-js butt-wrapp__butt butt-wrapp__butt--less-padd">Изменить</button>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <form class="journal-wr">
+                                    <div class="journal-wr__time">
+                                        <label for="time-1">Время действия</label>
+                                        <input type="text" id="time-1" data-mask="time">
+                                    </div>
+                                    <div>
+                                        <textarea class="journal-wr__textarea" placeholder="Добавьте действие на этот день"></textarea>
+                                    </div>
+                                    <div class="butt-wrapp butt-wrapp--right">
+                                        <button type="submit" class="butt-wrapp__butt butt-wrapp__butt--less-padd">Сохранить</button>
+                                    </div>
+                                </form>
+                            
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    
+                    <div class="butt-wrapp butt-wrapp--center">
+                        <a href="#" class="butt-wrapp__butt butt-wrapp__butt--width-595">Начать тренинг заново</a>
+                    </div>
                        
-                        
-                        
-                   
                 </div>
             </div>
         </div>
@@ -223,6 +251,25 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/datepicker.js"></script>
+    <script type="text/javascript" src="js/datepicker.ru-RU.js"></script>
+    <script type="text/javascript" src="js/meiomask.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script>
+        $('[data-toggle="datepicker"]').datepicker({
+            language: 'ru-RU'
+        });
+        $('input[data-mask]').each(function() {
+            var input = $(this);
+            input.setMask(input.data('mask'));
+          });
+        
+        
+        $('.edit-js').click(function(){
+            $(this).parents('.one-goal').addClass('for-hide');
+            $(this).parents('.one-goal').next().addClass('showed-edit');
+            
+        });
+    </script>
 </body>
 </html>
